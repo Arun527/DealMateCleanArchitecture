@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  - group: 'DatabaseSettings_Production'
+  - group: 'DatabaseSettings'
 
 steps:
 - task: UseDotNet@2
