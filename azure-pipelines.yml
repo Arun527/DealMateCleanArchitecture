@@ -32,7 +32,7 @@ steps:
     publishWebProjects: true
     arguments: '--configuration Release --output $(Build.ArtifactStagingDirectory)/api'
 
-  - task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@1
   displayName: 'Publish Artifacts'
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
